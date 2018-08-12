@@ -1,0 +1,23 @@
+{
+  "name": "battle-map-editor",
+  "version": "0.0.1",
+  "description": "战争战役地图编辑器，基于maptalk制作一些历史战争地图",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Char-Ten/battle-map-editor.git"
+  },
+  "author": "charten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Char-Ten/battle-map-editor/issues"
+  },
+  "homepage": "https://github.com/Char-Ten/battle-map-editor#readme",
+  "devDependencies": {
+    "webpack": "^4.16.5",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
