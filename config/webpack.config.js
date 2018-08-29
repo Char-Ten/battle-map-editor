@@ -1,0 +1,36 @@
+const PATH=require("path");
+
+module.exports={
+    entry:{
+        app:PATH.join(__dirname,"../app/index.js")
+    },
+    output:{
+        filename:"src/js/[name].js",
+        sourceMapFilename:"src/sourcemap/[file].map",
+        chunkFilename:"src/js/chunks/[id].js",
+        path:PATH.join(__dirname,"../dist")
+    },
+    resolve:{
+        alias:{
+            app$:PATH.join(__dirname,"../app")
+        }
+    },
+    module:{
+        rules:[{
+            test:/\.js$/,
+            use:{
+                loader:"babel-loader"
+            }
+        },{
+            test:/\.css$/,
+            use:[{
+                loader:"style-loader"
+            },{
+                loader:"css-loader"
+            },{
+                loader:"postcss-loader"
+            }]
+        }]
+    },
+    plugins:[]
+}
