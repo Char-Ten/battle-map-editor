@@ -1,77 +1,87 @@
 {
-  "name": "battle-map-editor",
-  "version": "0.0.1",
-  "description": "战争战役地图编辑器，基于maptalk制作一些历史战争地图",
-  "main": "index.js",
-  "scripts": {
-    "dll": "webpack-cli -p --config config/webpack.dll.js",
-    "dev": "webpack-dev-server --config config/webpack.config.js",
-    "build": "webpack-cli  --config config/webpack.prod.js --progress"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Char-Ten/battle-map-editor.git"
-  },
-  "author": "charten",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Char-Ten/battle-map-editor/issues"
-  },
-  "homepage": "https://github.com/Char-Ten/battle-map-editor#readme",
-  "devDependencies": {
-    "autoprefixer": "^9.1.3",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "7.2.3",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-import": "^1.7.0",
-    "babel-plugin-transform-async-to-generator": "^6.16.0",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-react-app": "^3.1.1",
-    "babel-preset-stage-0": "^6.16.0",
-    "babel-runtime": "6.26.0",
-    "copy-webpack-plugin": "^4.5.2",
-    "css-loader": "^1.0.0",
-    "eslint": "^5.4.0",
-    "eslint-plugin-react": "7.4.0",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "html-webpack-plugin": "^3.2.0",
-    "less": "^3.8.1",
-    "less-loader": "^4.1.0",
-    "postcss-flexbugs-fixes": "^4.1.0",
-    "postcss-loader": "^3.0.0",
-    "style-loader": "^0.22.1",
-    "url-loader": "^1.1.1",
-    "webpack": "^4.16.5",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
-  },
-  "dependencies": {
-    "mobx": "^5.0.3",
-    "mobx-react": "^5.2.5",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
-    "react-loadable": "^5.4.0"
-  },
-  "babel": {
-    "presets": [
-      "env",
-      [
-        "es2015",
-        {
-          "modules": false
-        }
-      ],
-      "stage-0",
-      "react"
-    ],
-    "plugins": [
-      "transform-async-to-generator",
-      "transform-decorators-legacy"
-    ]
-  }
+    "name": "battle-map-editor",
+    "version": "0.0.1",
+    "description": "战争战役地图编辑器，基于maptalk制作一些历史战争地图",
+    "main": "index.js",
+    "scripts": {
+        "dll": "webpack-cli -p --config config/webpack.dll.js",
+        "dev": "webpack-dev-server --config config/webpack.config.js",
+        "build": "webpack-cli  --config config/webpack.prod.js --progress"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Char-Ten/battle-map-editor.git"
+    },
+    "author": "charten",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Char-Ten/battle-map-editor/issues"
+    },
+    "homepage": "https://github.com/Char-Ten/battle-map-editor#readme",
+    "devDependencies": {
+        "autoprefixer": "^9.1.3",
+        "babel-core": "^6.26.3",
+        "babel-eslint": "7.2.3",
+        "babel-loader": "^7.1.5",
+        "babel-plugin-import": "^1.7.0",
+        "babel-plugin-transform-async-to-generator": "^6.16.0",
+        "babel-plugin-transform-decorators-legacy": "^1.3.4",
+        "babel-plugin-transform-runtime": "^6.22.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-react-app": "^3.1.1",
+        "babel-preset-stage-0": "^6.16.0",
+        "babel-runtime": "6.26.0",
+        "copy-webpack-plugin": "^4.5.2",
+        "css-loader": "^1.0.0",
+        "eslint": "4.13.0",
+        "eslint-config-react-app": "^2.1.0",
+        "eslint-plugin-flowtype": "^2.50.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jsx-a11y": "5.1.1",
+        "eslint-plugin-react": "7.4.0",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "html-webpack-plugin": "^3.2.0",
+        "less": "^3.8.1",
+        "less-loader": "^4.1.0",
+        "postcss-flexbugs-fixes": "^4.1.0",
+        "postcss-loader": "^3.0.0",
+        "style-loader": "^0.22.1",
+        "url-loader": "^1.1.1",
+        "webpack": "^4.16.5",
+        "webpack-cli": "^3.1.0",
+        "webpack-dev-server": "^3.1.5"
+    },
+    "dependencies": {
+        "maptalks": "^0.40.5",
+        "mobx": "^5.0.3",
+        "mobx-react": "^5.2.5",
+        "react": "^16.4.2",
+        "react-dom": "^16.4.2",
+        "react-loadable": "^5.4.0",
+        "react-router": "^4.3.1",
+        "react-router-dom": "^4.3.1"
+    },
+    "babel": {
+        "presets": [
+            "env",
+            [
+                "es2015",
+                {
+                    "modules": false
+                }
+            ],
+            "stage-0",
+            "react"
+        ],
+        "plugins": [
+            "transform-async-to-generator",
+            "transform-decorators-legacy",
+            "transform-runtime"
+        ]
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    }
 }

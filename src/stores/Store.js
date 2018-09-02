@@ -3,4 +3,5 @@ export default class Store{
 		this.rootStore=root;
 		this.parentStore=parent;
 	}
+	
 }
